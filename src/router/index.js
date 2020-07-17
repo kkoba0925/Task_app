@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue' // added
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Task_kanri_suruyatsu from '@/components/Task_kanri_suruyatsu'
+import About from '@/components/About'
+// import store from "./store"
 
 Vue.use(Router)
 Vue.use(BootstrapVue) // added
@@ -13,8 +15,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Task_kanri_suruyatsu',
+      component: Task_kanri_suruyatsu
+    },
+    {
+      path: '/About',
+      name: 'About',
+      component: About
     }
   ]
 })
