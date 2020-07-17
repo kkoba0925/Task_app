@@ -1,9 +1,8 @@
 <template>
-
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Task list</th>
       <th></th>
     </tr>
   </thead>
@@ -34,13 +33,9 @@
     </tr>
   </tbody>
 </table>
-
 </template>
 
 <script>
 
 </script>
 
-<style>
-
-</style>
