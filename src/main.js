@@ -12,3 +12,15 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+var vm = new Vue({
+  el: '#tasks-index',
+  data: {
+    tasks: [
+      { id: 1, name: 'Studying JavaScript' },
+      { id: 2, name: 'Studying PHP' },
+      { id: 3, name: 'Studying Ruby' },
+    ]
+  }
+})
+

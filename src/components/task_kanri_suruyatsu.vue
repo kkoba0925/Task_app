@@ -1,29 +1,17 @@
 <template>
-<table class="table table-striped">
+<table class="table table-striped" >
   <thead>
     <tr>
       <th>Task list</th>
       <th></th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>Studying JavaScript</td>
-      <td>
-        <div class="btn btn-danger">Done!</div>
-      </td>
-    </tr>
-    <tr>
-      <td>Studying PHP</td>
-      <td>
-        <div class="btn btn-danger">Done!</div>
-      </td>
-    </tr>
-    <tr>
-      <td>Studying Ruby</td>
-      <td>
-        <div class="btn btn-danger">Done!</div>
-      </td>
+  <tbody id="tasks-index">
+    <tr v-for="task in tasks" :key="task.name">
+    <td>{{ name }}</td>
+    <td>
+      <div class="btn btn-danger">完了</div>
+    </td>
     </tr>
     <tr>
       <td><input class="form-control"></td>
@@ -36,5 +24,7 @@
 </template>
 
 <script>
+
+
 
 </script>
